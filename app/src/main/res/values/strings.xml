@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Consulta Veicular</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_title">Consulta Veicular</string>
+
+    <!-- Menu Principal -->
+    <string name="main_title">Bem-vindo ao Consulta Veicular</string>
+    <string name="main_description">Consulte informações sobre rodízio e licenciamento do seu veículo, ou calcule a melhor opção de combustível.</string>
+    <string name="btn_rodizio">Consulta de Rodízio e Licenciamento</string>
+    <string name="btn_combustivel">Calculadora de Combustível</string>
+
+    <!-- Tela de Rodízio -->
+    <string name="rodizio_title">Consulta de Rodízio</string>
+    <string name="rodizio_hint">Digite a placa do veículo</string>
+    <string name="btn_consultar">Consultar</string>
+    <string name="btn_voltar">Voltar</string>
+    <string name="rodizio_final">Final da placa:</string>
+    <string name="rodizio_dia">Rodízio:</string>
+    <string name="rodizio_horario">Horário de restrição:</string>
+    <string name="rodizio_licenciamento">Licenciamento até:</string>
+    <string name="error_placa_invalida">Placa inválida!</string>
+    <string name="error_campo_vazio">Por favor, digite uma placa válida</string>
+
+    <!-- Tela de Combustível -->
+    <string name="combustivel_title">Calculadora de Combustível</string>
+    <string name="combustivel_gasolina">Preço da Gasolina (R$)</string>
+    <string name="combustivel_etanol">Preço do Etanol (R$)</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="error_campos_vazios">Preencha todos os campos</string>
+    <string name="error_valores_invalidos">Digite valores válidos</string>
+    <string name="recomendacao_etanol">O Etanol é a melhor opção para abastecimento.</string>
+    <string name="recomendacao_gasolina">A Gasolina é a melhor opção para abastecimento.</string>
+    <string name="proporcao">Proporção (Etanol ÷ Gasolina):</string>
+</resources>

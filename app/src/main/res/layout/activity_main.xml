@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_gray">
+
+    <!-- Ícone Principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚗"
+        android:textSize="64sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_blue"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Descrição -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_description"
+        android:textSize="16sp"
+        android:textColor="@color/text_light"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Botão Rodízio -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_rodizio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/btn_rodizio"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_blue"
+        android:layout_marginBottom="16dp"
+        android:cornerRadius="8dp" />
+
+    <!-- Botão Combustível -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_combustivel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/btn_combustivel"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_blue"
+        android:cornerRadius="8dp" />
+
+</LinearLayout>

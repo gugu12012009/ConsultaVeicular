@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header com Botão Voltar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_voltar_rodizio"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="←"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary_blue"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:cornerRadius="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rodizio_title"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_blue"
+                android:gravity="center"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+        <!-- Input Placa -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_placa"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="@string/rodizio_hint"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:maxLength="8" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botão Consultar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_consultar_rodizio"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_consultar"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/success_green"
+            android:layout_marginBottom="32dp"
+            android:cornerRadius="8dp" />
+
+        <!-- Mensagem Erro -->
+        <TextView
+            android:id="@+id/erro_message_rodizio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/error_red"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp" />
+
+        <!-- Container Resultados -->
+        <LinearLayout
+            android:id="@+id/resultado_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <!-- Resultado Final -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rodizio_final"
+                android:textSize="16sp"
+                android:textColor="@color/text_light"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/resultado_final"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_blue"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Dia Rodízio -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rodizio_dia"
+                android:textSize="16sp"
+                android:textColor="@color/text_light"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/resultado_dia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_blue"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Horário -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rodizio_horario"
+                android:textSize="16sp"
+                android:textColor="@color/text_light"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/resultado_horario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7h às 10h e 17h às 20h"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/warning_orange"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Licenciamento -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rodizio_licenciamento"
+                android:textSize="16sp"
+                android:textColor="@color/text_light"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/resultado_licenciamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/success_green" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
